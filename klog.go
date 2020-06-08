@@ -440,6 +440,30 @@ func InitFlags(flagset *flag.FlagSet) {
 	flagset.Var(&logging.traceLocation, "log_backtrace_at", "when logging hits line file:N, emit a stack trace")
 }
 
+type Config struct {
+	StdErrThreshold  severity
+	LogDir           string
+	LogFile          string
+	LogFileMaxSizeMB uint64
+	ToStdErr         bool
+	AlsoToStdErr     bool
+	SkipHeaders      bool
+	AddDirHeader     bool
+	SkipLogHeaders   bool
+}
+
+func InitWithConfig(config *Config) {
+	logging.stderrThreshold = config.StdErrThreshold
+	logging.logDir = config.LogDir
+	logging.logFile = config.LogFile
+	logging.logFileMaxSizeMB = config.LogFileMaxSizeMB
+	logging.toStderr = config.ToStdErr
+	logging.alsoToStderr = config.AlsoToStdErr
+	logging.skipHeaders = config.SkipHeaders
+	logging.addDirHeader = config.AddDirHeader
+	logging.skipLogHeaders = config.SkipLogHeaders
+}
+
 // Flush flushes all pending log I/O.
 func Flush() {
 	logging.lockAndFlushAll()
