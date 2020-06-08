@@ -1,3 +1,5 @@
+github.com/clarkmcc/klog/v2 v2.0.0-20200608165832-f9c2fc7d321d h1:EhJzhWmHUf2LihJzWNHZj8DEpNObMohrX8ZeCaVXdww=
+github.com/clarkmcc/klog/v2 v2.0.0-20200608165832-f9c2fc7d321d/go.mod h1:73Hk1ohpVDcdXbS8/rRBd04P5rWIuMRLzwos13iYft4=
 github.com/go-logr/logr v0.1.0 h1:M1Tv3VzNlEHg6uyACnRdtrploV2P7wZqH8BoQMtz0cg=
 github.com/go-logr/logr v0.1.0/go.mod h1:ixOQHD9gLJUVQQ2ZOR7zLEifBX6tGkNJF4QyIY7sIas=
 github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b h1:VKtxabqXZkF25pY9ekfRL6a582T4P37/31XEstQ5p58=
