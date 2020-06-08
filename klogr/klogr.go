@@ -10,8 +10,8 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/clarkmcc/klog/v2"
 	"github.com/go-logr/logr"
-	"k8s.io/klog/v2"
 )
 
 // New returns a logr.Logger which is implemented by klog.
